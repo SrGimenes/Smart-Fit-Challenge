@@ -25,7 +25,7 @@ export class FormsComponent implements OnInit {
     })
     this.unitService.getAllUnits().subscribe(data => {
       this.results = data.locations;
-      this.results = data.locations;
+      this.filteredResults = data.locations;
     });
   }
 

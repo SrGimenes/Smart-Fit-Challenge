@@ -22,12 +22,12 @@
   <div class="checkbox-wrapper">
     <div class="checkbox">
       <input type="checkbox" name="showClosed" formControlName="showClosed"/>
-      <label for="show-closed"> Exibir unidades fechadas </label>
+      <label for="showClosed"> Exibir unidades fechadas </label>
     </div>
     <span>Resultados encontrados: {{ filteredResults.length }}</span>
   </div>
   <div class="btn-wrapper">
-    <button class="btn btn-primary" (click)="onSubmit">Encontrar Unidade</button>
-    <button class="btn btn-secundary" (click)="onClean">Limpar</button>
+    <button class="btn btn-primary" (click)="onSubmit()"> Encontrar Unidade </button>
+    <button class="btn btn-secundary" (click)="onClean()"> Limpar </button>
   </div>
 </form>
